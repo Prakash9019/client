@@ -9,7 +9,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/portfolio');
+      const res = await axios.get('https://portfolio-backend-six-neon.vercel.app/api/portfolio');
       setData(res.data);
       setLastUpdated(new Date());
       setLoading(false);
